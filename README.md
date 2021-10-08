@@ -21,8 +21,8 @@ Bu kichik PHP dasturi GSM usb modem yordamida SMS xabarlarni yuborish va boshqar
 # Muallifdan
 Ushbu dastur **Kibertexnik kompyuter injinering maktabi** nomidan ta'limni rivojlantirish uchun opensourcega kiritildi.
 
-Muallif: Manuchehr Usmonov
-Telegram: [@kibertexnik](https://t.me/kibertexnik)
-Tel: +998(88) 231-22-02
-Veb-sayt: www.kibertexnik.uz, www.devcon.uz
+Muallif: Manuchehr Usmonov\
+Telegram: [@kibertexnik](https://t.me/kibertexnik)\
+Tel: +998(88) 231-22-02\
+Veb-sayt: www.kibertexnik.uz, www.devcon.uz\
 E-mail: con9799@mail.ri
