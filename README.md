@@ -24,5 +24,5 @@ Ushbu dastur **Kibertexnik kompyuter injinering maktabi** nomidan ta'limni rivoj
 Muallif: Manuchehr Usmonov\
 Telegram: [@kibertexnik](https://t.me/kibertexnik)\
 Tel: +998(88) 231-22-02\
-Veb-sayt: www.kibertexnik.uz, www.devcon.uz\
-E-mail: con9799@mail.ri
+Veb-sayt: www.kibertexnik.uz, www.devcon.uz \
+E-mail: con9799@mail.ru
