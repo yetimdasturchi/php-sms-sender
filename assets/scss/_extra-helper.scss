@@ -1,0 +1,141 @@
+/* =============
+   Extras
+============= */
+
+
+/* =============
+   Demo Css
+============= */
+
+.demo-box {
+  padding: 10px 15px;
+}
+
+/* Button demo */
+
+.button-list {
+  margin-left: -8px;
+  margin-bottom: -12px;
+  .btn {
+    margin-bottom: 12px;
+    margin-left: 8px;
+  }
+}
+
+/* Popover */
+
+.demo-popover {
+  .popover {
+    position: relative;
+    display: block;
+    float: left;
+    width: 260px;
+    margin: 20px;
+    z-index: 9;
+  }
+}
+
+/* Tooltips */
+
+.demo-tooltip {
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    margin: 10px 20px;
+    opacity: 1;
+  }
+}
+
+/* Grid page */
+
+.grid-structure .grid-container {
+  background-color: $light3;
+  margin-bottom: 18px;
+  padding: 12px 20px;
+  font-family: $font-secondary;
+}
+
+/* Demo Animation */
+.demo-animation {
+  text-align: center;
+  img {
+    position: relative;
+    width: 120px;
+    display: block;
+    margin: 0 auto 40px auto;
+    z-index: 1;
+    border-radius: 2px;
+  }
+}
+
+/* Demo only */
+.icon-list-demo {
+
+  div {
+    cursor: pointer;
+    line-height: 45px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+
+    p {
+      margin-bottom: 0;
+      line-height: inherit;
+    }
+  }
+
+  i {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    //border: 1px solid $light3;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 12px;
+    color: fade($dark,70%);
+    border-radius: 3px;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+  [class^="pe-7s-"], [class*=" pe-7s-"] {
+    font-weight: 600;
+  }
+
+  .col-md-4 {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-clip: padding-box;
+    margin-bottom: 10px;
+
+    &:hover i {
+      color: $white;
+      background-color: $primary;
+    }
+  }
+}
+
+/* Switchery demo */
+.switchery-demo {
+  margin-bottom: -10px;
+  .switchery {
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+}
+
+
+/* Icon colored demo */
+.icon-colored {
+  height: 48px;
+  width: 48px;
+  margin: 2rem;
+}
+
+.icon-colored-lg {
+  height: 64px;
+  width: 64px;
+  margin: 2.2rem;
+}

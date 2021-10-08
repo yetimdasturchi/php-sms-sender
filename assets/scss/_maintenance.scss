@@ -1,0 +1,25 @@
+/* =============
+   Maintenance
+============= */
+
+.svg-computer {
+  stroke-dasharray:1134;
+  stroke-dashoffset:-1134;
+  animation: draw-me 5s infinite;
+  animation-direction:normal;
+  height: 200px;
+}
+@keyframes draw-me {
+  from {
+    stroke-dashoffset:-1134;
+  }
+  to {
+    stroke-dashoffset:0;
+  }
+}
+.svg-rocket {
+  height: 200px;
+}
+.rocket-clouds__bubble,.rocket-clouds__cloud,.rocket-rocket,.rocket-inner__rocket-and-lines {
+  fill: $white;
+}

@@ -1,0 +1,40 @@
+.bg-accpunt-pages{
+	background-image: url(../images/bg2-white.png)!important;
+	background-color: #212D3B!important;
+}
+.account-box{
+	background-color: #1D2733;
+    box-shadow: 0px 5px 12px 5px #000000!important;
+}
+label[for="mobilephone"], label[for="otp"]{
+	color: #98a6ad !important;
+}
+#mobilephone, #otp{
+	background-color: #3F5263!important;
+    color: #fff!important;
+}
+#mobilephone::placeholder, #otp::placeholder { 
+  color: #98a6ad !important;
+  opacity: 1; 
+}
+
+#mobilephone:-ms-input-placeholder, #otp:-ms-input-placeholder {
+  color: #98a6ad !important;
+}
+
+#mobilephone::-ms-input-placeholder, #otp::-ms-input-placeholder {
+  color: #98a6ad !important;
+}
+
+.site-auth button:active, .site-auth button:hover, .site-auth button:focus, .site-otp button:active, .site-otp button:hover, .site-otp button:focus{
+	background-color:#2b333d !important;
+	border-color:#fff!important;
+}
+
+.otp-resend{
+	background-color: #2b333d !important;border-color: #fff!important;
+}
+
+.error-404 .text-danger{
+	color:  #fff!important;
+}

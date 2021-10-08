@@ -1,0 +1,59 @@
+/* =============
+   Members list
+============= */
+
+.member-card {
+  .member-thumb {
+    position: relative;
+  }
+  .member-star {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 16px;
+    background-color: $white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.member-card-alt {
+  .member-thumb {
+    position: relative;
+  }
+
+  .member-card-alt-info {
+    margin-left: 140px;
+  }
+  .member-star {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 16px;
+    background-color: $white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.social-links li a {
+  border-radius: 50%;
+  color: rgba($light7,0.8);
+  display: inline-block;
+  height: 30px;
+  line-height: 27px;
+  border: 2px solid rgba($light7,0.5);
+  text-align: center;
+  width: 30px;
+
+  &:hover {
+    color: $light7;
+    border: 2px solid $light7;
+  }
+}

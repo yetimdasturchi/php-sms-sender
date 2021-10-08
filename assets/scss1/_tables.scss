@@ -1,0 +1,727 @@
+/* =============
+   Tables
+============= */
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: 12px 10px;
+}
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+  padding: 7px;
+}
+th {
+  font-family: $font-secondary;
+}
+.table-centered {
+  td {
+    vertical-align: middle !important;
+  }
+}
+
+/* Data table */
+div.dt-button-info {
+  background-color: $custom;
+  border: none;
+  color: $white;
+  box-shadow: none;
+  border-radius: 3px;
+  text-align: center;
+  z-index: 21;
+}
+div.dt-button-info h2 {
+  border-bottom: none;
+  background-color: rgba($white,0.2);
+  color: $white;
+}
+table.dataTable {
+  margin-top: 10px !important;
+  margin-bottom: 18px !important;
+}
+.table-bordered.dataTable>thead>tr>td, .table-bordered.dataTable>thead>tr>th {
+  border-bottom-width: 1px !important;
+}
+
+/* Fixed Header table */
+.fixedHeader-floating {
+  top: 70px !important;
+  z-index: 99;
+}
+/* Key Table border */
+table.dataTable th.focus, table.dataTable td.focus {
+  outline: 2px solid $custom !important;
+  outline-offset: -1px;
+  background-color: $custom;
+  color: $white;
+}
+
+/* Responsive data table */
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+  box-shadow: 0 0 3px rgba(67, 89, 102, 0.2);
+  background-color: $success;
+}
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before {
+  background-color: $danger;
+}
+table.dataTable>tbody>tr.child span.dtr-title {
+  font-family: $font-secondary;
+}
+
+/* ColVid Tables */
+div.ColVis {
+  float: none;
+  margin-right: 30px;
+}
+button.ColVis_Button,
+.ColVis_Button:hover {
+  float: none;
+  border-radius: 3px;
+  outline: none !important;
+  background: none;
+  box-shadow: none;
+  color: $white !important;
+  background-color: $custom !important;
+  border: 1px solid $custom !important;
+}
+.dataTables_length {
+  float: left;
+}
+div.ColVis_collectionBackground {
+  background-color: transparent;
+}
+ul.ColVis_collection {
+  padding: 10px 0 0 0;
+  background-color: $white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border: none;
+}
+ul.ColVis_collection li {
+  background: transparent !important;
+  padding: 3px 10px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+#datatable-colvid_info {
+  float: left;
+}
+
+/* Responsive Table */
+.table-rep-plugin {
+  .dropdown-menu li.checkbox-row {
+    padding: 2px 15px !important;
+  }
+
+  .table-responsive {
+    border: none !important;
+  }
+  tbody {
+    th {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+  .checkbox-row {
+    padding-left: 40px;
+
+    label {
+      display: inline-block;
+      padding-left: 5px;
+      position: relative;
+      &::before {
+        -o-transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        background-color: $white;
+        border-radius: 3px;
+        border: 1px solid $muted;
+        content: "";
+        display: inline-block;
+        height: 17px;
+        left: 0;
+        margin-left: -20px;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+        width: 17px;
+        outline: none !important;
+      }
+      &::after {
+        color: $light3;
+        display: inline-block;
+        font-size: 11px;
+        height: 16px;
+        left: 0;
+        margin-left: -20px;
+        padding-left: 3px;
+        padding-top: 1px;
+        position: absolute;
+        top: -1px;
+        width: 16px;
+      }
+    }
+    input[type="checkbox"] {
+      cursor: pointer;
+      opacity: 0;
+      z-index: 1;
+      outline: none !important;
+
+      &:disabled + label {
+        opacity: 0.65;
+      }
+    }
+    input[type="checkbox"]:focus + label {
+      &::before {
+        outline-offset: -2px;
+        outline: none;
+      }
+    }
+    input[type="checkbox"]:checked + label {
+      &::after {
+        content: "\f00c";
+        font-family: 'FontAwesome';
+      }
+    }
+    input[type="checkbox"]:disabled + label {
+      &::before {
+        background-color: $light;
+        cursor: not-allowed;
+      }
+    }
+    input[type="checkbox"]:checked + label {
+      &::before {
+        background-color: $white;
+        border-color: $custom;
+      }
+      &::after {
+        color: $custom;
+      }
+    }
+  }
+  table.focus-on tbody tr.focused th, table.focus-on tbody tr.focused td,
+  .sticky-table-header{
+    background-color: $custom;
+    color: $white;
+    border-color: $custom;
+  }
+  .sticky-table-header.fixed-solution {
+    top: 70px !important;
+  }
+  .btn-default {
+    background-color: $white;
+    border: 1px solid rgba($dark, 0.3);
+  }
+  .btn-group.pull-right {
+    float: right;
+    .dropdown-menu {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+
+
+/* Data table editable */
+.add-edit-table {
+  td,th {
+    vertical-align: middle !important;
+  }
+  td {
+    border: 0 !important;
+  }
+}
+#datatable-editable .actions a {
+  padding: 5px;
+}
+#datatable-editable .form-control {
+  background-color: $white;
+  width: auto;
+  height: 20px;
+}
+#datatable-editable .fa-trash-o {
+  color: $danger;
+}
+#datatable-editable .fa-times {
+  color: $danger;
+}
+#datatable-editable .fa-pencil {
+  color: $custom;
+}
+#datatable-editable .fa-save {
+  color: $success;
+}
+#datatable td {
+  font-weight: normal;
+}
+.modal-block {
+  background: transparent;
+  margin: 40px auto;
+  max-width: 600px;
+  padding: 0;
+  position: relative;
+  text-align: left;
+}
+
+
+.dt-buttons {
+  float: left;
+}
+div#datatable-buttons_info {
+  float: left;
+}
+table.dataTable thead th {
+  position: relative;
+  background-image: none !important;
+}
+
+
+/* Tablesaw Tables */
+.tablesaw {
+  thead {
+    background: rgba($light3,0.7);
+    background-image: none;
+    border: none;
+
+    th {
+      text-shadow: none;
+      letter-spacing: 0.06em;
+    }
+
+    tr:first-child th {
+      font-weight: 600;
+      border: none;
+      font-family: $font-secondary;
+    }
+  }
+  td {
+    border-top: 1px solid rgba($light3,0.7) !important;
+  }
+}
+
+.tablesaw td, .tablesaw tbody th {
+  font-size: inherit;
+  line-height: inherit;
+  padding: 10px !important;
+}
+.tablesaw-stack tbody tr ,.tablesaw tbody tr{
+  border-bottom: none;
+}
+.tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-ascending button:after, .tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-descending button:after {
+  font-family: FontAwesome;
+  font-size: 10px;
+}
+.tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-ascending button:after {
+  content: "\f176";
+}
+.tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-descending button:after {
+  content: "\f175";
+}
+.tablesaw-bar .btn-select.btn-small:after, .tablesaw-bar .btn-select.btn-micro:after {
+  font-size: 8px;
+  padding-right: 10px;
+}
+.tablesaw-swipe .tablesaw-cell-persist {
+  box-shadow: none;
+}
+.tablesaw-enhanced .tablesaw-bar .btn {
+  text-shadow: none;
+  background-image: none;
+}
+.tablesaw-enhanced .tablesaw-bar .btn.btn-select {
+  &:hover {
+    background: $white;
+  }
+}
+.tablesaw-enhanced .tablesaw-bar .btn:hover, .tablesaw-enhanced .tablesaw-bar .btn:focus,.tablesaw-enhanced .tablesaw-bar .btn:active {
+  color: $custom !important;
+  background-color: $light3;
+  outline: none !important;
+  box-shadow: none !important;
+  background-image: none;
+}
+
+/* Footable */
+.footable-odd {
+  background-color: $white;
+}
+.footable-detail-show {
+  background-color: darken($light3,5%);
+}
+.footable-row-detail {
+  //background-color: #F0F4F7;
+}
+.footable > thead > tr > th > span.footable-sort-indicator {
+  float: right;
+}
+.footable-pagination {
+  li {
+    margin-left: 5px;
+    display: inline-block;
+    float: left;
+
+    a{
+      position: relative;
+      display: block;
+      padding: .5rem .75rem;
+      margin-left: -1px;
+      line-height: 1.25;
+      color: $dark;
+      background-color: $white;
+      border: 1px solid $light;
+    }
+  }
+  li.active {
+    a {
+      color: $white;
+    }
+  }
+}
+
+/* Table colored */
+.table-colored {
+  thead {
+    th {
+      color: $white;
+    }
+  }
+}
+.table-colored.table-custom {
+  thead {
+    th {
+      background-color: $custom;
+    }
+  }
+}
+.table-colored.table-primary {
+  thead {
+    th {
+      background-color: $primary;
+    }
+  }
+}
+.table-colored.table-success {
+  thead {
+    th {
+      background-color: $success;
+    }
+  }
+}
+
+.table-colored.table-info {
+  thead {
+    th {
+      background-color: $info;
+    }
+  }
+}
+
+.table-colored.table-warning {
+  thead {
+    th {
+      background-color: $warning;
+    }
+  }
+}
+
+.table-colored.table-danger {
+  thead {
+    th {
+      background-color: $danger;
+    }
+  }
+}
+
+.table-colored.table-inverse {
+  thead {
+    th {
+      background-color: $inverse;
+    }
+  }
+}
+
+.table-colored.table-pink {
+  thead {
+    th {
+      background-color: $pink;
+    }
+  }
+}
+
+.table-colored.table-purple {
+  thead {
+    th {
+      background-color: $purple;
+    }
+  }
+}
+
+
+/* Table colored-bordered */
+
+.table-colored-bordered {
+  thead {
+    th {
+      border-bottom: 0 !important;
+      color: $white;
+    }
+  }
+}
+
+.table-colored-bordered.table-bordered-primary {
+  border: 2px solid $primary;
+
+  thead {
+    th {
+      background-color: $primary;
+    }
+  }
+}
+
+.table-colored-bordered.table-bordered-success {
+  border: 2px solid $success;
+
+  thead {
+    th {
+      background-color: $success;
+    }
+  }
+}
+
+.table-colored-bordered.table-bordered-info {
+  border: 2px solid $info;
+
+  thead {
+    th {
+      background-color: $info;
+    }
+  }
+}
+
+.table-colored-bordered.table-bordered-custom {
+  border: 2px solid $custom;
+
+  thead {
+    th {
+      background-color: $custom;
+    }
+  }
+}
+
+.table-colored-bordered.table-bordered-warning {
+  border: 2px solid $warning;
+
+  thead {
+    th {
+      background-color: $warning;
+    }
+  }
+}
+
+.table-colored-bordered.table-bordered-danger {
+  border: 2px solid $danger;
+
+  thead {
+    th {
+      background-color: $danger;
+    }
+  }
+}
+
+.table-colored-bordered.table-bordered-inverse {
+  border: 2px solid $inverse;
+
+  thead {
+    th {
+      background-color: $inverse;
+    }
+  }
+}
+
+.table-colored-bordered.table-bordered-pink {
+  border: 2px solid $pink;
+
+  thead {
+    th {
+      background-color: $pink;
+    }
+  }
+}
+
+.table-colored-bordered.table-bordered-purple {
+  border: 2px solid $purple;
+
+  thead {
+    th {
+      background-color: $purple;
+    }
+  }
+}
+
+
+/* Table full colored */
+.table-colored-full {
+  color: $white;
+
+  thead {
+    th {
+      border-bottom: 0 !important;
+      padding: 10px !important;
+    }
+  }
+  tbody {
+    td,th {
+      border: 0 !important;
+    }
+  }
+}
+
+.table-colored-full.table-full-primary {
+  background-color: rgba($primary,0.8);
+
+  thead {
+    th {
+      background-color: $primary;
+    }
+  }
+  tbody {
+    tr{
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+.table-colored-full.table-full-success {
+  background-color: rgba($success,0.8);
+
+  thead {
+    th {
+      background-color: $success;
+    }
+  }
+  tbody {
+    tr{
+      &:hover {
+        background-color: $success;
+      }
+    }
+  }
+}
+
+.table-colored-full.table-full-info {
+  background-color: rgba($info,0.8);
+
+  thead {
+    th {
+      background-color: $info;
+    }
+  }
+  tbody {
+    tr{
+      &:hover {
+        background-color: $info;
+      }
+    }
+  }
+}
+
+.table-colored-full.table-full-custom {
+  background-color: rgba($custom,0.8);
+
+  thead {
+    th {
+      background-color: $custom;
+    }
+  }
+  tbody {
+    tr{
+      &:hover {
+        background-color: $custom;
+      }
+    }
+  }
+}
+
+.table-colored-full.table-full-warning {
+  background-color: rgba($warning,0.8);
+
+  thead {
+    th {
+      background-color: $warning;
+    }
+  }
+  tbody {
+    tr{
+      &:hover {
+        background-color: $warning;
+      }
+    }
+  }
+}
+
+.table-colored-full.table-full-danger {
+  background-color: rgba($danger,0.8);
+
+  thead {
+    th {
+      background-color: $danger;
+    }
+  }
+  tbody {
+    tr{
+      &:hover {
+        background-color: $danger;
+      }
+    }
+  }
+}
+
+.table-colored-full.table-full-inverse {
+  background-color: rgba($inverse,0.8);
+
+  thead {
+    th {
+      background-color: $inverse;
+    }
+  }
+  tbody {
+    tr{
+      &:hover {
+        background-color: $inverse;
+      }
+    }
+  }
+}
+
+
+.table-colored-full.table-full-pink {
+  background-color: rgba($pink,0.8);
+
+  thead {
+    th {
+      background-color: $pink;
+    }
+  }
+  tbody {
+    tr{
+      &:hover {
+        background-color: $pink;
+      }
+    }
+  }
+}
+
+.table-colored-full.table-full-purple {
+  background-color: rgba($purple,0.8);
+
+  thead {
+    th {
+      background-color: $purple;
+    }
+  }
+  tbody {
+    tr{
+      &:hover {
+        background-color: $purple;
+      }
+    }
+  }
+}

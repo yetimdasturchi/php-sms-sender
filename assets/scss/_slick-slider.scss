@@ -1,0 +1,56 @@
+/* ===========
+Slider
+============== */
+
+.slick-prev, .slick-next {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: $dark !important;
+  box-shadow: $shadow;
+}
+
+.slider-padding {
+  div {
+    margin: 5px;
+  }
+}
+
+.slick-prev:before, .slick-next:before {
+  color: $custom;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-dots li button::before {
+  font-size: 10px;
+  color: $dark !important;
+  border: 2px solid $dark !important;
+  border-radius: 50%;
+  line-height: 18px;
+}
+
+.slick-center img {
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  opacity: 1;
+  transform: scale(1.01);
+  border: 3px solid $custom;
+}
+
+.slider-syncing-nav {
+  margin-top: 10px;
+
+  div {
+    border-left: 3px solid $white;
+  }
+}

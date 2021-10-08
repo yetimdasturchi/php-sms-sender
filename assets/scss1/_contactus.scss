@@ -1,0 +1,26 @@
+/* =============
+   Contact Us
+============= */
+.contact-map {
+  background-color: $light3;
+}
+.contact-box {
+  padding: 30px;
+}
+
+.contact-detail {
+  margin-bottom: 40px;
+}
+.contact-detail i{
+  float: left;
+  width: 32px;
+  font-size: 20px;
+}
+
+.contact-detail p,.contact-detail address{
+  overflow: hidden;
+}
+
+.contact-detail a {
+  color: #496174;
+}

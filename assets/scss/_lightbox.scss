@@ -1,0 +1,14 @@
+/* ====
+Lightbox
+===== */
+.lb-data {
+  .lb-caption {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 2em;
+  }
+  .lb-number {
+    color: rgba($white,0.7);
+  }
+}

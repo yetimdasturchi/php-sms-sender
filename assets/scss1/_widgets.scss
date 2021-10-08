@@ -1,0 +1,274 @@
+/* =============
+   Widgets
+============= */
+.widget-box-one {
+  .widget-one-icon {
+    position: absolute;
+    right: 30px;
+    font-size: 72px !important;
+    top: 0;
+    color: $light3;
+    overflow: hidden;
+    vertical-align: middle;
+    line-height: 2 !important;
+  }
+
+  .wigdet-one-content {
+    position: relative;
+  }
+}
+
+.widget-box-two {
+  text-align: right;
+  p {
+    font-size: 14px;
+  }
+  .widget-two-icon {
+    position: absolute;
+    left: 30px;
+    font-size: 36px !important;
+    top: 30px;
+    overflow: hidden;
+    vertical-align: middle;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    line-height: 74px;
+    border-radius: 50%;
+  }
+  .wigdet-two-content {
+    position: relative;
+  }
+}
+
+.widget-two-custom {
+
+  .widget-two-icon {
+    color: $custom;
+    border: 4px double $custom;
+  }
+}
+
+.widget-two-primary {
+  .widget-two-icon {
+    color: $primary;
+    border: 4px double $primary;
+  }
+}
+
+.widget-two-success {
+  .widget-two-icon {
+    color: $success;
+    border: 4px double $success;
+  }
+}
+
+.widget-two-warning {
+  .widget-two-icon {
+    color: $warning;
+    border: 4px double $warning;
+  }
+}
+
+.widget-two-info {
+  .widget-two-icon {
+    color: $info;
+    border: 4px double $info;
+  }
+}
+
+.widget-two-danger {
+  .widget-two-icon {
+    color: $danger;
+    border: 4px double $danger;
+  }
+}
+
+.widget-two-inverse {
+  .widget-two-icon {
+    color: $inverse;
+    border: 4px double $inverse;
+  }
+}
+
+.widget-two-purple {
+  .widget-two-icon {
+    color: $purple;
+    border: 4px double $purple;
+  }
+}
+
+.widget-two-pink {
+  .widget-two-icon {
+    color: $pink;
+    border: 4px double $pink;
+  }
+}
+
+.widget-two-default {
+  background-color: $white;
+
+  .widget-two-icon {
+    color: darken($light3,20%);
+    border: 2px solid darken($light3,20%);
+  }
+}
+
+.widget-box-three {
+  img {
+    height: 48px;
+    width: 48px;
+    line-height: 80px;
+  }
+  .bg-icon {
+    height: 80px;
+    width: 80px;
+    line-height: 76px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-clip: padding-box;
+    border: 1px dashed $muted;
+    background-color: $light3;
+    margin-right: 20px;
+
+    i {
+      vertical-align: middle;
+      font-size: 36px;
+      color: $muted;
+    }
+  }
+}
+
+
+.widget-user {
+  position: relative;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+}
+
+
+.widget-box-four {
+  position: relative;
+
+  .widget-box-four-chart {
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+  }
+  .wigdet-four-content {
+    background-color: rgba($white,0.2);
+    position: relative;
+  }
+  h3 {
+    font-size: 22px;
+  }
+}
+
+
+/* Inbox-widget */
+
+.inbox-widget {
+  .inbox-item {
+    border-bottom: 1px solid rgba($light3,0.9);
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
+    .inbox-item-img {
+      display: block;
+      float: left;
+      margin-right: 15px;
+      width: 40px;
+    }
+    img {
+      width: 40px;
+    }
+    .inbox-item-author {
+      color: $dark;
+      display: block;
+      margin: 0;
+      font-family: $font-secondary;
+    }
+    .inbox-item-text {
+      display: block;
+      font-size: 12px;
+      margin: 0;
+      color: $muted;
+    }
+    .inbox-item-date {
+      font-size: 11px;
+      position: absolute;
+      right: 7px;
+      top: 2px;
+    }
+  }
+}
+
+
+.user-position {
+  position: absolute;
+  top: 0;
+  border-left: 1px solid $light;
+  bottom: 0;
+  width: 44px;
+  font-size: 16px;
+  text-align: center;
+  right: 0;
+  left: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+
+  span {
+    transform: rotate(90deg);
+  }
+}
+
+
+/* Avatar box */
+.avatar-sm-box {
+  height: 32px;
+  width: 32px;
+  color: $white;
+  display: block;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  font-family: $font-secondary;
+  font-size: 16px;
+}
+
+/* Table with Action */
+.table-actions-bar {
+  tr {
+    td{
+      vertical-align: middle !important;
+    }
+  }
+  .table-action-btn {
+    color: $muted;
+    display: inline-block;
+    width: 28px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 20px;
+
+    &:hover {
+      color: $custom;
+      border-color: $custom;
+    }
+  }
+}

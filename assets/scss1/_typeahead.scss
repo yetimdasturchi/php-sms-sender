@@ -1,0 +1,67 @@
+/* =================
+   Typehead
+==================== */
+
+.twitter-typeahead {
+  display: inherit !important;
+}
+
+.tt-query,
+.tt-hint {
+  padding: 8px 12px;
+  line-height: 30px;
+  outline: none;
+}
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+  color: $muted;
+}
+
+.tt-menu {
+  width: 100%;
+  padding: 8px 0;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: $white;
+  box-shadow: 0 1px 3px rgba($dark,0.2);
+  border: 1px solid rgba($muted,0.15);
+}
+
+.tt-suggestion {
+  padding: 3px 20px;
+  line-height: 24px;
+}
+
+.tt-suggestion:hover {
+  cursor: pointer;
+  color: $white;
+  background-color: $custom;
+}
+
+.tt-suggestion.tt-cursor {
+  color: $white;
+  background-color: $custom;
+
+}
+.tt-highlight {
+  font-family: $font-primary;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+.typeahead-empty-message {
+  padding: 5px 10px;
+  color: $danger;
+}
+
+.league-name {
+  padding: 3px 20px;
+}

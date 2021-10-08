@@ -1,0 +1,150 @@
+/* =============
+   Form wizard
+============= */
+
+.stepy-step {
+  padding: 0 20px;
+}
+.stepy-header {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+
+  li {
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+
+    &:after,
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 43px;
+      width: 50%;
+      height: 2px;
+      background-color: $custom;
+      z-index: 9;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after{
+      right: 0 !important;
+    }
+
+    &:first-child:before,
+    &:last-child:after {
+      content: none;
+    }
+    span {
+      display: block;
+      margin-top: 10px;
+      color: #999;
+      font-weight: 600;
+    }
+
+    div {
+      background-color: $custom;
+      font-size: 0;
+      position: relative;
+      color: $white;
+      margin-left: auto;
+      margin-right: auto;
+      width: 48px;
+      height: 48px;
+      border: 2px solid $custom;
+      z-index: 10;
+      line-height: 44px;
+      text-align: center;
+      border-radius: 50%;
+
+      &:after{
+        font-family: "Material Design Icons";
+        -webkit-font-smoothing: antialiased;
+        line-height: 44px;
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\F12D";
+        display: inline-block;
+        font-size: 24px;
+        -o-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+      }
+    }
+  }
+  li.stepy-active:after,
+  li.stepy-active~li:after,
+  li.stepy-active~li:before {
+    background-color: $light;
+  }
+  li.stepy-active~li div {
+    border-color: $light;
+    background-color: $white;
+    color: $light7;
+    font-size: 18px;
+    font-weight: 600;
+
+    &:after {
+      content: none;
+    }
+  }
+  li.stepy-active {
+    div {
+      cursor: auto;
+      border-color: $custom;
+      background-color: $white;
+      color: $custom;
+      &:after {
+        content: "\F64F";
+      }
+    }
+    span {
+      color: $custom;
+    }
+  }
+}
+
+@media (max-width:769px) {
+  .stepy-header {
+    margin-bottom: 20px;
+    li {
+      display: block;
+      float: left;
+      width: 50%;
+      padding-bottom: 0;
+
+      &:first-child:before,
+      &:last-child:after {
+        content: '';
+      }
+    }
+    li.stepy-active:last-child:after {
+      background-color: $custom;
+    }
+  }
+}
+
+@media (max-width:480px) {
+  .stepy-header {
+    li {
+      width: 100%;
+    }
+    li.stepy-active:after {
+      background-color: $custom;
+    }
+  }
+}
+
+.stepy-navigator {
+  text-align: right;
+  margin-bottom: 0;
+  margin-top: 20px;
+}

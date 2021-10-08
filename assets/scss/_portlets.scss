@@ -1,0 +1,95 @@
+/* =============
+   Portlets
+============= */
+
+.portlet {
+  background: $white;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+  opacity: 1;
+
+  .portlet-heading {
+    border-radius: 3px 3px 0 0;
+    color: $white;
+    padding: 12px 20px;
+
+    .portlet-title {
+      color: $white;
+      float: left;
+      font-size: 16px;
+      margin: 6px 0 0 0;
+      letter-spacing: 0.03em;
+    }
+    .portlet-widgets {
+      display: inline-block;
+      float: right;
+      font-size: 18px;
+      line-height: 30px;
+      padding-left: 15px;
+      position: relative;
+      text-align: right;
+      .divider {
+        margin: 0 5px;
+      }
+      .collapsed {
+        .mdi-minus {
+          &:before {
+            content: "\F415" !important;
+          }
+        }
+      }
+    }
+    a {
+      color: #999999;
+      padding: 0 2px;
+    }
+  }
+  .portlet-body {
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    background: $white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 15px;
+  }
+}
+
+.portlet-default {
+  .portlet-title {
+    color: $light7 !important;
+  }
+}
+
+.portlet .portlet-heading.bg-custom a, .portlet .portlet-heading.bg-purple a, .portlet .portlet-heading.bg-info a, .portlet .portlet-heading.bg-success a, .portlet .portlet-heading.bg-primary a, .portlet .portlet-heading.bg-danger a, .portlet .portlet-heading.bg-warning a, .portlet .portlet-heading.bg-inverse a, .portlet .portlet-heading.bg-pink a {
+  color: $white;
+}
+
+.panel-disabled {
+  background: rgba(243, 242, 241, 0.5);
+  left: 0;
+  cursor: wait;
+  position: absolute;
+  right: -5px;
+  top: 0;
+  bottom: 0;
+}
+
+.loader-1 {
+  width: 30px;
+  height: 30px;
+  background-color: $dark;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+}

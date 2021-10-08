@@ -1,0 +1,30 @@
+/* =============
+   Tree view page
+============= */
+.jstree-default {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  .jstree-clicked {
+    background: rgba($custom,0.1);
+  }
+  .jstree-hovered {
+    background: rgba($custom,0.2);
+    box-shadow: none;
+  }
+  .jstree-wholerow-clicked {
+    background: rgba($custom,0.4);
+  }
+  .jstree-wholerow-hovered {
+    background: rgba($custom,0.2);
+  }
+}
+
+.jstree-anchor {
+  padding: 0 6px 0 2px;
+}
+
+.jstree-themeicon.mdi {
+  font-size: 18px;
+}

@@ -1,0 +1,9 @@
+{
+	"key":"uzbekcyr",
+	"code":"uzcyr",
+	"name":"Ўзбек",
+	"short_name":"Ўз",
+	"flagicon": "uz",
+	"image_1x1":"assets\/images\/scss\/flags-icon\/1x1\/uz.svg",
+	"image_4x4":"assets\/images\/scss\/flags-icon\/4x4\/uz.svg"
+}

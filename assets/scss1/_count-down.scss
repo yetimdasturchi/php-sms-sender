@@ -1,0 +1,68 @@
+/* =============
+   Count Down
+============= */
+.count-down-bg {
+  background: url("../images/bg-countdown.jpg");
+}
+#count-down {
+  margin-top: 50px;
+
+  .clock-presenter {
+    height: 140px;
+    line-height: 30px;
+    padding: 0 30px;
+    text-align: center;
+
+    .digit {
+      margin-top: 20px;
+      font-size: 60px;
+      font-family: $font-secondary;
+      line-height: 60px;
+      font-weight: bold;
+      height: 60px;
+      display: inline-block;
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+      cursor: default;
+      color: $white;
+    }
+
+    .note {
+      position: relative;
+      bottom: 0;
+      padding-top: 5px;
+      cursor: default;
+      font-size: 16px;
+      color: $white;
+      font-family: $font-secondary;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #count-down {
+    .clock-presenter .digit {
+      font-size: 42px;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  #count-down {
+    .clock-presenter {
+      width: 50%;
+      float: left;
+    }
+
+    .clock-presenter .digit {
+      font-size: 36px;
+    }
+
+    .hours_dash {
+      border-right: none;
+    }
+  }
+}

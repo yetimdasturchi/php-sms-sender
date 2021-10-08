@@ -1,0 +1,87 @@
+/* =============
+   Summernote
+============= */
+
+.note-editor {
+  position: relative;
+
+  .btn-default {
+    background-color: transparent;
+    border-color: transparent !important;
+  }
+  .btn-group-sm > .btn, .btn-sm {
+    padding: 8px 12px !important;
+  }
+  .note-toolbar {
+    background-color: $light3;
+    border-bottom: 1px solid $light;
+    margin: 0;
+  }
+  .note-statusbar {
+    background-color: $white;
+    .note-resizebar {
+      border-top: none;
+      height: 15px;
+      padding-top: 3px;
+    }
+  }
+}
+.note-editor.note-frame {
+  border: 1px solid $light !important;
+}
+
+.note-popover {
+  .popover {
+    .popover-content {
+      padding: 5px 0 10px 5px;
+    }
+  }
+
+  .btn-default {
+    background-color: transparent;
+    border-color: transparent !important;
+  }
+  .btn-group-sm > .btn, .btn-sm {
+    padding: 8px 12px !important;
+  }
+}
+
+.note-toolbar {
+  padding: 5px 0 10px 5px;
+}
+
+.link-dialog {
+  .checkbox {
+    label {
+      input[type="checkbox"]:checked {
+        opacity: 1;
+
+        &:after {
+          content: "\f00c";
+          font-family: 'FontAwesome';
+          background-color: $white;
+          height: 15px;
+          width: 14px;
+          display: block;
+          margin-left: -3px;
+          margin-top: -3px;
+          border-radius: 3px;
+          font-size: 12px;
+          text-align: center;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+
+.note-image-popover,.note-air-popover,.note-link-popover {
+  display: none;
+
+  .dropdown-toggle::after {
+    margin-left: 0;
+  }
+}
+.note-icon-caret {
+  display: none;
+}
